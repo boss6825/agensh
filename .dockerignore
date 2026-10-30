@@ -1,0 +1,24 @@
+# The root build context is used only by agent/Dockerfile.
+# Include its source inputs; local credentials, results and media stay outside.
+**
+!agent/
+!agent/Dockerfile
+!agent/Dockerfile.base
+!agent/*.py
+!agent/*.sh
+!agent/copilot/
+!agent/copilot/*.sh
+!agent/pi/
+!agent/pi/*.py
+!agent/codex/
+!agent/codex/*.py
+!agent/claude/
+!agent/claude/*.py
+!agent/config/
+!agent/config/*.json
+!agent/config/*.tmpl
+!board-service/
+!board-service/mcp.cjs
+!prompts/
+!prompts/agents.txt
+!prompts/pbench_brief.txt

@@ -1,0 +1,60 @@
+# Local credentials and experiment configuration.
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# Private agent state and experiment data.
+.claude/
+.claude-team-data*/
+v2notes/
+/director_sop.md
+/mcp_discipline.md
+/sop_v2_extra.md
+/sop_v3_director.md
+
+# Generated results, Compose files and logs.
+/out/
+/logs/
+/artifacts/
+/.artifacts/
+/docker/_gen_prod.*.yml
+/docker/_gen-prod.*.yml
+*.log
+*.bak
+*.bak.*
+
+# Python and Node build/dependency caches.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+mini-router/dist/
+
+# Editor and operating-system state.
+.DS_Store
+.idea/
+.vscode/
+.history/
+*~
+*.swp
+*.swo
+
+# Optional external checkouts are not part of this release.
+/ProgramBench/
+/programbench/
+/agent-lightning/
+/hermes-agent/
+/mattermost-server/
+/mattermost-webapp/
+/claude-agent-acp/
+/oh-my-claudecode/
+
+# Security review materials. Never track or publish.
+/security-review/
+PRIVATE_REPORT.md
